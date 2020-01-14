@@ -55,6 +55,26 @@ links[3].textContent = siteContent["nav"]["nav-item-4"]
 links[4].textContent = siteContent["nav"]["nav-item-5"]
 links[5].textContent = siteContent["nav"]["nav-item-6"]
 
+links.forEach(element => {
+  element.style.color = "green";
+})
+
+const newA = document.createElement('a');
+newA.textContent = "New!";
+newA.style.color = "Red";
+
+const newA2 = document.createElement('a');
+newA2.textContent = "New!";
+newA2.style.color = "Blue";
+
+
+
+let nav = document.querySelector('nav');
+nav.appendChild(newA);
+nav.prepend(newA2);
+
+
+
 let h1 = document.querySelector('h1');
 h1.textContent = siteContent["cta"]['h1'];
 
@@ -67,18 +87,23 @@ h4Content[1].textContent = siteContent['main-content']['about-h4'];
 h4Content[2].textContent = siteContent['main-content']['services-h4'];
 h4Content[3].textContent = siteContent['main-content']['product-h4'];
 h4Content[4].textContent = siteContent['main-content']['vision-h4'];
+//contact
 h4Content[5].textContent = siteContent['contact']['contact-h4'];
 
-let mainContent = document.querySelectorAll('p');
-mainContent[0].textContent = siteContent['main-content']['features-content'];
-mainContent[1].textContent = siteContent['main-content']['about-content'];
-mainContent[2].textContent = siteContent['main-content']['services-content'];
-mainContent[3].textContent = siteContent['main-content']['product-content'];
-mainContent[4].textContent = siteContent['main-content']['vision-content'];
-mainContent[5].textContent = siteContent['contact']['address'];
-mainContent[6].textContent = siteContent['contact']['phone'];
-mainContent[7].textContent = siteContent['contact']['email'];
-mainContent[8].textContent = siteContent['footer']['copyright'];
+let pContent = document.querySelectorAll('p');
+pContent[0].textContent = siteContent['main-content']['features-content'];
+pContent[1].textContent = siteContent['main-content']['about-content'];
+pContent[2].textContent = siteContent['main-content']['services-content'];
+pContent[3].textContent = siteContent['main-content']['product-content'];
+pContent[4].textContent = siteContent['main-content']['vision-content'];
+//contact
+pContent[5].textContent = siteContent['contact']['address'];
+pContent[6].textContent = siteContent['contact']['phone'];
+pContent[7].textContent = siteContent['contact']['email'];
+//footer
+pContent[8].textContent = siteContent['footer']['copyright'];
+
+
 
 
 
